@@ -15,6 +15,6 @@ def do_pack():
     res = local('tar -cvzf {} web_static/'.format(arc))
 
     try:
-        return res
+        return arc
     except Exception:
         return None
